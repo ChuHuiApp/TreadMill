@@ -73,10 +73,10 @@ public class SettingLockActivity extends BaseFragmentActivity implements OnKeyBo
         showLockDialog();
     }
 
+    int bgResource = -1;
+    int tgCard = -1;
     @OnClick({R.id.settings_card_lock, R.id.settings_card_psw})
     public void onSelectCardClick(View view) {
-        int bgResource = -1;
-        int tgCard = -1;
         Fragment tgFragment = null;
         switch (view.getId()) {
             case R.id.settings_card_lock:

@@ -82,10 +82,11 @@ public class Factory2Activity extends BaseFragmentActivity {
         finishActivity();
     }
 
+    int bgResource = -1;
+    int tgCard = -1;
     @OnClick({R.id.factory_2_card_setting, R.id.factory_2_card_info, R.id.factory_2_card_update, R.id.factory_2_card_logo})
     public void onSelectCardClick(View view) {
-        int bgResource = -1;
-        int tgCard = -1;
+
         Fragment tgFragment = null;
         switch (view.getId()) {
             default:

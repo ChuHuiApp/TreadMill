@@ -56,18 +56,6 @@ public abstract class BaseFragmentActivity extends FragmentActivity {
             @Override
             public void onSystemUiVisibilityChange(int i) {
                 int uiOptions = -1;
-                //隐藏虚拟按键，并且全屏
-//                if (Build.VERSION.SDK_INT > 11 && Build.VERSION.SDK_INT < 19) { // lower api
-//                    uiOptions = View.GONE;
-//                } else if (Build.VERSION.SDK_INT >= 19) {
-//                    //for new api versions.
-//                    uiOptions = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-//                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-//                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-//                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // hide nav  bar
-//                            | View.SYSTEM_UI_FLAG_FULLSCREEN // hide status bar
-//                            | View.SYSTEM_UI_FLAG_IMMERSIVE;
-//                }
                 uiOptions = View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                         | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN

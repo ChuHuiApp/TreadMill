@@ -52,10 +52,10 @@ public class SettingActivity extends BaseFragmentActivity {
     private SettingsFragmentCard2 card2;
     private SettingsFragmentCard3 card3;
     private SettingsFragmentCard4 card4;
-    private static final int CARD_1 = 0;
-    private static final int CARD_2 = 1;
-    private static final int CARD_3 = 2;
-    private static final int CARD_4 = 3;
+    private  final int CARD_1 = 0;
+    private  final int CARD_2 = 1;
+    private  final int CARD_3 = 2;
+    private  final int CARD_4 = 3;
 
     private static final float SELECT_TEXT_SIZE = 35f;
     private static final float UN_SELECT_TEXT_SIZE = 30f;
@@ -115,10 +115,11 @@ public class SettingActivity extends BaseFragmentActivity {
         }
     }
 
+    int bgResource = -1;
+    int tgCard = -1;
+
     @OnClick({R.id.settings_card_system, R.id.settings_card_bluetooth, R.id.settings_card_wifi, R.id.settings_card_lock})
     public void onSelectCardClick(View view) {
-        int bgResource = -1;
-        int tgCard = -1;
         Fragment tgFragment = null;
         switch (view.getId()) {
             case R.id.settings_card_system:
